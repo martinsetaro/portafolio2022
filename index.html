@@ -15,10 +15,10 @@
 <body>
     <header class="header" id="miHeader">
         <h1>Martin Setaro |<span>Desarrollador Front End</span></h1>
-        <nav class="navegacion">
+        <nav id="inicio" class="navegacion">
             <a href="#" class="link_activo">Inicio</a>
-            <a href="#">Proyectos</a>
-            <a href="#">Contactos</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contactos</a>
         </nav>
 
     </header>
@@ -61,9 +61,60 @@
 
             </div>
         </section>
+        <section class="proyectos" id="proyectos">
+            <h2 data-aos="flip-up" data-aos-duration="1000">Proyectos</h2>
+            <div class="proyectos_contenedor" >
+                 <div class="boxes">
+                    <h2>01.<span>CineHome</span></h2>
+                    <img src="./img/cinehome.png" alt="home" title="home">
+                    <p>Proyecto realizado en React y base de datos en Firebase, tienda virtual para la compra de peliculas en formato Blue-ray y DVD, filtrado por categoria , ticket de compra. </p>
+                    <h4>Herramientas: React Js - Sass - Netlify - Firebase</h4>
+                    <button class="btn"><a href="https://sitecinehome.netlify.app/" target="_blank">Visitar el sitio</a></button>
+                    
+                 </div>
+                 <div class="boxes">
+                    <h2>02.<span>Rock y festival Dj</span></h2>
+                    <img src="./img/festival.png" alt="home" title="home">
+                    <p>Página web con información sobre eventos musicales locales, con timeline que muestra dias y horarios de las bandas en escena , tambíen con precios de diferentes eventos.  </p>
+                    <h4>Herramientas: JavaScript - Sass - GitHub - Gulp </h4>
+                    <button class="btn"><a href="https://martinsetaro.github.io/rock-festival-music/" target="_blank">Visitar el sitio</a></button>
+
+                 </div>
+                 <div class="boxes">
+                    <h2>03.<span>Radio Activa</span></h2>
+                    <img src="./img/activa.png" alt="home" title="home">
+                    <p>Página web que incluye una emisora de radio, con secciones, deportes,espectaculos, y sección de podCast.  </p>
+                    <h4>Herramientas: JavaScript - Sass - GitHub - Gulp </h4>
+                    <button class="btn"><a href="https://martinsetaro.github.io/radioactiva/" target="_blank">Visitar el sitio</a></button>
+                 </div>
+                 <div class="boxes">
+                    <h2>04.<span>Vida Tinto</span></h2>
+                    <img src="./img/tinto.png" alt="home" title="home">
+                    <p>Página web dedicada a la gastronomia y el vino desde cada región, cuenta con varias secciones, turismo, contacto,bodegas.  </p>
+                    <h4>Herramientas: HTML5 - CSS - Sass - GitHub </h4>
+                    <button class="btn"><a href="https://martinsetaro.github.io/vidatinto/" target="_blank">Visitar el sitio</a></button>
+                 </div>
+                 <div class="boxes">
+                    <h2>05.<span>Tienda cursos</span></h2>
+                    <img src="./img/tienda.png" alt="home" title="home">
+                    <p>Página web tienda online compra de cursos variados , desde aprender a tocar un instrumento hasta saber programar.  </p>
+                    <h4>Herramientas: JavaScript - Sass - GitHub - Git </h4>
+                    <button class="btn"><a href="https://martinsetaro.github.io/tiendaCursos/#" target="_blank">Visitar el sitio</a></button>
+                 </div>
+            </div>
+
+        </section>
 
         
     </div>
+    <footer class="footer" id="contacto">
+        <a href="https://github.com/martinsetaro" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+        <a href="https://www.linkedin.com/in/martin-setaro-16068b181/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="mailto:lordsesony@gmail.com"><h3>Lordsesony@gmail.com</h3></a>
+        <a href="./assets/MartinResume.pdf" class="cv" download="cvMartinSetaro2022">Descarga CV</a>
+        <a href="#inicio" class="link_arriba"><h4>Volver arriba</h4></a>
+
+    </footer>
     <script src="js/app.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
