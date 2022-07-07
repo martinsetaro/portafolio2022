@@ -19,6 +19,7 @@ html {
     background-image: url('../img/back4.jpg');
     background-size: cover;
     background-attachment: fixed;
+    scroll-behavior: smooth;
     
   }
 
@@ -41,6 +42,9 @@ html {
         text-transform: uppercase;
         position: relative;
         transition: all .4s ease-in-out;
+        @media (min-width:760px){
+          font-size: 1.8rem;
+        }
     }
     span 
     {
@@ -48,6 +52,9 @@ html {
       color: cyan;
       font-family: $fuenteTitulo;
       font-weight: 300;
+      @media (min-width:760px){
+      font-size: 1.3rem;
+      }
       
     }
   }
@@ -56,6 +63,9 @@ html {
 
   .navegacion 
   {
+    @media (max-width:760px){
+      display: none;
+    }
     
     a 
     {
@@ -67,6 +77,11 @@ html {
         font-family: $fuenteTexto;
         transition: all .4s ease-in;
         cursor: pointer;
+        @media (min-width:760px){
+           
+           
+           font-size: 1.6rem;
+        }
     }
 
   }
@@ -107,6 +122,12 @@ html {
     background-color: rgb(0,0,0,0.8);
     border-radius: 1rem;
     clip-path: polygon(0 0, 100% 16%, 100% 73%, 0% 100%);
+    @media (max-width:760px){
+     width: 100%;
+     display: flex;
+     flex-direction: column; 
+     clip-path: none;
+    }
 
   }
   .foto_perfil 
@@ -121,6 +142,10 @@ html {
     {
         width: 65%;
         height: 65%;
+        @media (max-width:760px){
+          width: 80%;
+          height: 80%;
+        }
         
     }
   }
@@ -131,6 +156,9 @@ html {
     height: 100%;
     line-height: 2.5rem;
     padding: 4rem;
+    @media (max-width:760px){
+     line-height: 2rem; 
+    }
     h2 
     {
         font-family: $fuenteTitulo;
@@ -139,6 +167,9 @@ html {
         color: aqua;
         text-align: left;
         text-transform: uppercase;
+        @media (max-width:760px){
+           font-size: 5rem;
+        }
     }
     h3 
     {
@@ -147,6 +178,10 @@ html {
         font-size: 5rem;
         text-align: left;
         margin-bottom: 0;
+        @media (max-width:760px){
+         margin-bottom: 2rem;
+         font-size: 3rem;
+        }
         
     }
     h4 
@@ -154,6 +189,12 @@ html {
         font-size: 3rem;
         color: aqua;
         font-family: $fuenteTitulo;
+        @media (max-width:760px){
+       font-size: 2rem;
+        }
+        @media (min-width:760px){
+      font-size: 2.5rem;
+        }
     }
   }
   .sobre_mi 
@@ -164,20 +205,34 @@ html {
     background-color: rgba(9, 207, 233, 0.9);
     border-radius: 1rem;
     line-height: 4rem;
-    padding: 1rem;
+    padding: 2rem;
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    @media (max-width:760px){
+     clip-path: none; 
+     height: 70rem;
+    }
+    @media (min-width:760px){
+      clip-path: none;
+    }
     h2 
     {
         font-size: 6rem;
         text-align: center;
         font-family: $fuenteTitulo;
+        @media (max-width:760px){
+        font-size: 4rem;
+        }
     }
     p
     {
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-align: center;
-        font-family: $fuentePopin;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
+        @media (max-width:760px){
+        font-size: 1.3rem;
+        
+        }
     }
 
   }
@@ -196,6 +251,9 @@ html {
         font-family: $fuenteTitulo;
         color: #ffffff;
         text-align: center;
+        @media (max-width:760px){
+        font-size: 3.5rem;
+        }
     }
   }
   .skills .box 
@@ -206,12 +264,21 @@ html {
     display: flex;
     justify-content: space-around;
     overflow: hidden;
+    @media (max-width:760px){
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap; 
+     height: 30rem;
+        }
     ion-icon 
     {
         font-size: 17rem;
         color: aqua;
         margin-left: 2rem;
         transition: all .4s ease-in;
+        @media (max-width:760px){
+         font-size: 5rem;
+        }
 
         
     }
@@ -248,6 +315,9 @@ html {
         font-family: $fuenteTitulo;
         color: #ffffff;
         text-align: center;
+        @media (max-width:760px){
+         font-size: 5rem;
+        }
     }
 
   }
@@ -276,6 +346,10 @@ html {
     {
       width: 50%;
       height: 30rem;
+      @media (max-width:760px){
+       width: 100%;
+       height: 20rem;
+      }
       
     }
     p 
@@ -284,6 +358,9 @@ html {
     font-family: $fuentePopin;
     font-size: 2.5rem;
     text-align: center;
+    @media (max-width:760px){
+     font-size: 1.6rem; 
+    }
     }
     h4 
     {
@@ -291,6 +368,10 @@ html {
       font-size: 2rem;
       font-family: $fuenteTitulo;
       font-weight: 300;
+      @media (max-width:760px){
+      font-size: 1.6rem;
+      text-align: center;
+      }
     }
     
   }
@@ -347,6 +428,9 @@ html {
         color: #ffffff;
         font-family: $fuentePopin;
         transition: all .3s ease-in;
+        @media (max-width:760px){
+        font-size: 1.8rem;
+        }
       }
       h4 
       {
@@ -389,6 +473,9 @@ html {
     padding: 1rem;
     border-radius: 1rem;
     transition: all .3s ease-in;
+    @media (max-width:760px){
+     margin-top: 3rem; 
+    }
   }
   .cv:hover 
   {
