@@ -16,6 +16,7 @@ link.addEventListener('click', (e)=>{
 const scrollContainer = document.querySelector(".proyectos_contenedor");
 
 scrollContainer.addEventListener("wheel", (e) => {
+    
     e.preventDefault();
     scrollContainer.scrollLeft += e.deltaY;
 }); 

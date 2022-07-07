@@ -52,8 +52,9 @@ html {
       color: cyan;
       font-family: $fuenteTitulo;
       font-weight: 300;
-      @media (min-width:760px){
-      font-size: 1.3rem;
+      @media (max-width:760px){
+      font-family:$fuenteTitulo;
+      font-size: 1.8rem;
       }
       
     }
@@ -143,8 +144,9 @@ html {
         width: 65%;
         height: 65%;
         @media (max-width:760px){
-          width: 80%;
-          height: 80%;
+          width: 75%;
+          height: 90%;
+          margin-top: 2rem;
         }
         
     }
@@ -181,6 +183,7 @@ html {
         @media (max-width:760px){
          margin-bottom: 2rem;
          font-size: 3rem;
+         font-family: $fuenteTitulo;
         }
         
     }
@@ -192,8 +195,8 @@ html {
         @media (max-width:760px){
        font-size: 2rem;
         }
-        @media (min-width:760px){
-      font-size: 2.5rem;
+        @media (max-width:760px){
+      font-size: 2.1rem;
         }
     }
   }
@@ -244,6 +247,9 @@ html {
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0,0, 0.8);
+    @media (max-width:760px){
+      height: 30rem;
+     }
     h2 
     {
         font-size: 6rem;
@@ -298,6 +304,9 @@ html {
     height: 90rem;
     background-color: rgb(0,0,0,0.8);
     margin-top: 3rem;
+    @media (max-width:760px){
+      height: 330rem;
+    }
     
     &_contenedor 
     {
@@ -305,6 +314,15 @@ html {
     height: 100%;
     overflow-x: hidden;
     display: flex;
+    @media (max-width:760px){
+      flex-direction: column;
+      display: flex;
+      width: 100%;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      
+      
+    }
 
      }
 
@@ -330,7 +348,13 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
+    @media (max-width:760px){
+      margin-top: 5rem;
+      margin-bottom: 6rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
+     }
     h2 
     {
       color: cyan;
@@ -349,6 +373,9 @@ html {
       @media (max-width:760px){
        width: 100%;
        height: 20rem;
+       @media (max-width:760px){
+        width: 30rem;
+       }
       }
       
     }
@@ -359,7 +386,8 @@ html {
     font-size: 2.5rem;
     text-align: center;
     @media (max-width:760px){
-     font-size: 1.6rem; 
+     font-size: 1.6rem;
+     text-align: justify;
     }
     }
     h4 
@@ -412,6 +440,9 @@ html {
     background-color: rgb(0,0,0,0.8);
     text-align: center;
     padding: 3rem 1rem;
+    @media (max-width:760px){
+      height: 35rem;
+     }
     a 
     {
       text-decoration: none;
